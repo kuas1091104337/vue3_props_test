@@ -1,35 +1,15 @@
-<script>
-export default {
-  // props:{},
-  // setup(props){
-  //   return { props };
-  // },
-}
-</script>
-
 <template>
-  <div>
-    <header>
+  <div class="container">
+    <header class="head">
       <slot name="header"></slot>
     </header>
     <main>
-      <slot name="main"></slot>
+      <slot></slot>
     </main>
-    <footer>
+    <footer class="foot">
       <slot name="footer"></slot>
     </footer>
   </div>
-  <!-- <div class="wrap">
-    <header class="head">
-      <slot name="HD"></slot>
-    </header>
-    <main class="ma">
-      <slot name="MA"></slot>
-    </main>
-    <footer class="foot">
-      <slot name="FT"></slot>
-    </footer>
-  </div> -->
 </template>
 
 <style lang="scss">

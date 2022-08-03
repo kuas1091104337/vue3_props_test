@@ -1,21 +1,27 @@
 <script>
 export default {
-  setup(){
-    return {};
+  props:{
+    content:{
+      type:String,
+      default:''
+    },
   },
+  setup(props){
+    return { props };
+  }
 }
 </script>
 
 <template>
   <h1 class="slotsTitle">
     <img class="icon" src="../../assets/logo.png" alt="">
-    <slot>這是預設的內容喔</slot>
+    {{props.content}}
   </h1>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .slotsTitle{
-    color: blue;
+    color: red;
     font-weight: normal;
     font-style: italic;
     display: flex;
@@ -23,17 +29,6 @@ export default {
     > .icon{
       width: 50px;
       margin-right: 12px;
-    }
-  }
-  @layer two first;
-  @layer first {
-    .slotsTitle{
-      color: red;
-    }
-  }
-  @layer two {
-    .slotsTitle{
-      color: green !important;
     }
   }
 </style>

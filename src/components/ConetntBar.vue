@@ -2,7 +2,7 @@
 import { ref, computed, watch, onMounted } from 'vue';
 export default {
   props:{
-    styletype: {
+    menuContent: {
       type: String,
       default:''
     }
@@ -10,24 +10,25 @@ export default {
   setup(props){
     // 方法1
     // const text = ref(''),
-    //       handleType = (styletype) => {
-    //         if(styletype === 'home') text.value = '首頁';
-    //         if(styletype === 'about') text.value = '關於我們';
+    //       handleType = (menuContent) => {
+    //         if(menuContent === 'home') text.value = '首頁';
+    //         if(menuContent === 'about') text.value = '關於我們';
     //       };
-    // watch(() => props.styletype, newVal => handleType(newVal));
-    // onMounted(() => handleType(props.styletype));
+    // watch(() => props.menuContent, newVal => handleType(newVal));
+    // onMounted(() => handleType(props.menuContent));
     // 方法2
     const text = computed(()=> {
-      if(props.styletype === 'home') return "首頁"
-      if(props.styletype === 'about') return "關於我們"
+      if(props.menuContent === 'home') return "首頁"
+      if(props.menuContent === 'about') return "關於我們"
     });
+    console.log(toRefs(props));
     return {props,text}
   },
 }
 </script>
 
 <template>
-  <h1>{{text}} : {{props.styletype}}</h1> 
+  <h1>{{text}} : {{props.menuContent}}</h1> 
 </template>
 
 <style lang="scss">

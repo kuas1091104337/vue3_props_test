@@ -2,14 +2,15 @@ import { createApp } from 'vue'
 import dayjs from 'dayjs';
 // import App from './AppOld.vue'
 // import App from './App.vue'
-// import App from './AppWatch.vue'
+// [重構倒數第22天] - 減少 watch，改用 computed https://ithelp.ithome.com.tw/articles/10261662
+import App from './AppWatch.vue'
 
 // [重構倒數第01天] - Vue的表單自動暫存 https://ithelp.ithome.com.tw/articles/10274667
 // import App from './AppForm.vue'
 // [重構倒數第13天] - Vue3定義自己的模板語法 (第7章 - 30單元)
 // import App from './AppDirective.vue'
 // 第7章 - 31單元
-import App from './AppSlots.vue'
+// import App from './AppSlots.vue'
 // import App from './AppAnim1.vue'
 // import App from './AppGSAP2.vue'
 // import App from './AppBanner.vue'

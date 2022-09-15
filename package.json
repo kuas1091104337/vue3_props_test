@@ -11,7 +11,9 @@
     "core-js": "^3.8.3",
     "dayjs": "^1.11.4",
     "gsap": "^3.10.4",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-scrollto": "^2.20.0",
+    "vue-scrollwatch": "^1.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",

@@ -46,9 +46,18 @@ export default {
   .fade{
     &-enter, &-leave {
       &-active{transition: opacity 5s ease;}
+      // &-active{transition: 2s ease;}
     }
-    &-enter-from, &-leave-to {opacity: 0;}
-    &-enter-to, &-leave-from {opacity: 1;}
+    &-enter-from, &-leave-to {
+      // width: 0;
+      // height: 0;
+      opacity: 0;
+    }
+    &-enter-to, &-leave-from {
+      // width: 100px;
+      // height: 100px;
+      opacity: 1;
+    }
   }
   .scale{
     &-enter, &-leave{

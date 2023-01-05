@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import App from './AppScrollTo.vue'
+// import App from './AppScrollTo.vue'
 // import App from './AppScrollToTest.vue'
 
 // import App from './AppOld.vue'
@@ -10,7 +10,7 @@ import App from './AppScrollTo.vue'
 // [重構倒數第01天] - Vue的表單自動暫存 https://ithelp.ithome.com.tw/articles/10274667
 // import App from './AppForm.vue'
 // [重構倒數第13天] - Vue3定義自己的模板語法 (第7章 - 30單元)
-// import App from './AppDirective.vue'
+import App from './AppDirective.vue'
 // 第7章 - 31單元
 // import App from './AppSlots.vue'
 // import App from './AppAnim1.vue'
@@ -50,7 +50,7 @@ app.directive('focus',{
   mounted(el){ el.focus(); console.log(el); }
 });
 // 第4章 - 28單元
-import { numPrice } from '@/lib/tools.js'
+import { numPrice } from '@/lib/tools.js' 
 app.directive('price',{
   // dom render 完後，只會執行1次
   mounted(el, num){ el.innerHTML = numPrice(num.value) },

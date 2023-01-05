@@ -66,7 +66,7 @@ export default {
       <header class="card_head">
         <div class="card_head_wrap">
           <img v-src="card.avatar" class="card_head_img" />
-        </div>
+        </div> 
         <div>
           <h1>{{getLoad ? '' : card.name}}</h1>
           <p v-timeFormat="card.post_date"></p>

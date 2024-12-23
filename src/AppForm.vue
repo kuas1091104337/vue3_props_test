@@ -8,6 +8,8 @@ export default {
             console.log({name, password})
             // 表單送出後，清掉跟表單有關的 localStorage
             for (var key in localStorage) {
+              // console.log(localStorage);
+              console.log(key);
               if (/^form-(.+)/.test(key)) localStorage.removeItem(key);
             }
             alert("登入成功");
@@ -18,7 +20,7 @@ export default {
   },
 }
 </script>
-
+ 
 <template>
   <div class="loginBox">
     <div class="center">
